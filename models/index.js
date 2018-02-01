@@ -3,7 +3,7 @@ const S = require('sequelize');
 const db = new S('postgres://localhost:5432/testing-sequelize');
 
 
-db.define('student', {
+module.exports = db.define('student', {
   name: {
     type: S.STRING,
     allowNull: false,
